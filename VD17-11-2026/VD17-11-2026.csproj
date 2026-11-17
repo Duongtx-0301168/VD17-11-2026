@@ -1,18 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>VD17_11_2026</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="RevitAPI">
       <HintPath>D:\Revit 2025\RevitAPI.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
       <HintPath>D:\Revit 2025\RevitAPIUI.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
 
